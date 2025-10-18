@@ -199,7 +199,7 @@ function App() {
         {/*Use my location button*/}
         <button
           onClick={handleUseLocation}
-          className="group mt-5 hover:cursor-pointer font-medium w-full  text-white text-xl rounded-full p-3 hover:bg-black bg-yellow-500 flex items-center justify-center gap-2"
+          className="group mt-5 hover:cursor-pointer font-medium w-full text-white text-lg rounded-full p-2 hover:bg-black bg-yellow-500 flex items-center justify-center gap-2"
         >
           <img
             src="location-pin.png"
