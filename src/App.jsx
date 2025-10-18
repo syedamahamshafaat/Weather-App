@@ -98,12 +98,12 @@ function App() {
       )}
 
       {/* Weather card  */}
-      <div className="w-full max-w-lg p-7 shadow-2xl rounded">
+      <div className="w-full max-w-lg p-4 sm:p-7 shadow-2xl rounded">
         <div className="flex gap-2 items-center justify-center">
           <img
             src="weather.png"
             alt="weather icon"
-            className="w-20 h-20 mt-1"
+            className="w-16 h-16 sm:w-20 sm:h-20 mt-1"
           />
           <h1 className="text-center text-white text-2xl font-bold mt-6 ">
             Weather Board
@@ -150,10 +150,10 @@ function App() {
               <img
                 alt="weather icon"
                 src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
-                className="w-24 h-24"
+                className="w-20 h-20 sm:w-24 sm:h-24"
               />
               <div className="space-y-2">
-                <p className="text-5xl text-gray-800 font-bold">
+                <p className="text-4xl sm:text-5xl text-gray-800 font-bold">
                   {Math.round(weather.main.temp)}°C
                 </p>
                 <p className="capitalize">{weather.weather[0].description}</p>
@@ -171,7 +171,7 @@ function App() {
             <h3 className="text-xl text-center font-medium mt-4">
               3-Day Forecast
             </h3>
-            <div className="grid grid-cols-3 gap-4 mt-5">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-5">
               {forecast.map((day, index) => (
                 <div
                   key={index}
