@@ -98,8 +98,6 @@ function App() {
       )}
 
       {/* Weather card  */}
-
-      {/* 2. Make the card width responsive */}
       <div className="w-full max-w-lg p-7 shadow-2xl rounded">
         <div className="flex gap-2 items-center justify-center">
           <img
@@ -112,8 +110,7 @@ function App() {
           </h1>
         </div>
 
-        {/* 1. Move mt-4 here and add items-end to align items to the bottom */}
-        <div className="flex gap-2 mt-4 items-end">
+        <div className="flex flex-col sm:flex-row gap-2 mt-4 items-stretch">
           <input
             type="text"
             placeholder="Enter a city name"
@@ -121,12 +118,11 @@ function App() {
             onChange={(e) => setCity(e.target.value)}
             onKeyDown={handleKeyPress}
             // 2. Remove mt-4 from the input
-            className="bg-gray-600 outline-none rounded-lg p-3 text-white shadow-lg w-full"
+            className="bg-gray-600 outline-none rounded-lg p-3 text-white shadow-lg flex-1"
           />
-          {/* 3. Add explicit padding to the button to match the input's height */}
           <button
             onClick={handleSearch}
-            className="text-white hover:cursor-pointer flex items-center justify-center gap-1 hover:bg-black font-semiboldbold text-lg rounded-lg px-6 py-2 bg-yellow-500"
+            className="text-white hover:cursor-pointer flex items-center justify-center gap-1 hover:bg-black font-semiboldbold text-lg rounded-lg px-4 py-2 bg-yellow-500"
           >
             Search
             <img
