@@ -122,7 +122,7 @@ function App() {
           />
           <button
             onClick={handleSearch}
-            className="text-white hover:cursor-pointer flex items-center justify-center gap-1 hover:bg-black font-semiboldbold text-lg rounded-lg px-4 py-2 bg-yellow-500"
+            className="text-white hover:cursor-pointer flex items-center justify-center gap-1 hover:bg-black font-semiboldbold text-lg rounded-lg px-4 py-1 bg-yellow-500"
           >
             Search
             <img
