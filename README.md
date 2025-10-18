@@ -49,11 +49,11 @@ Installation:
 
     You'll need an API key from OpenWeatherMap.
 
-    Create a `.env` file in the root of your project and add your API key:
+    Create a `.env` file in the root of your project and add your API key like this:
+    ```env
+    VITE_WEATHER_APP_KEY=your_api_key_here
     ```
-    VITE_OPENWEATHER_API_KEY=YOUR_API_KEY
-    ```
-    Replace `YOUR_API_KEY` with your actual key.
+    
 
 5.  Start the development server
     ```sh
@@ -66,4 +66,3 @@ Usage
 1. Search for a City: Type a city name into the search bar and click the "Search" button or press `Enter`.
 2. Use Current Location: Click the "Use my current location" button to allow the browser to access your location and fetch local weather data.
 3. View Weather Data: The current weather and 3-day forecast will be displayed on the card below the search bar.
-

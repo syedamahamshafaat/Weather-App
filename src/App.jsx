@@ -100,7 +100,7 @@ function App() {
       {/* Weather card  */}
 
       {/* 2. Make the card width responsive */}
-      <div className="w-full max-w-lg p-8 shadow-2xl rounded">
+      <div className="w-full max-w-lg p-7 shadow-2xl rounded">
         <div className="flex gap-2 items-center justify-center">
           <img
             src="weather.png"
